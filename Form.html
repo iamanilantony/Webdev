@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaymentForm</title>
+    <link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" method="get">
+            <header><h1>Payment Form</h1></header>
+            <hr>
+            <h2>User information</h2>
+            <p>Name:
+            <input type="text" required name="name" placeholder="enter name here"></p>
+            <p><fieldset>
+                <legend>Gender</legend>
+                Male <input type="radio" name="gender" id="male" value="gender">
+                Female <input type="radio" name="gender" id="female" value="gender">
+                Other <input type="radio" name="gender" id="other" value="gender">
+            </fieldset></p>
+            <p>
+                Address : <textarea placeholder="enter your address here" rows="4" cols="50"></textarea>
+            </p>
+            <p>
+                Email: <input type="email" required  id="email" name="email">
+            </p>
+            <p>
+                pincode: <input type="number" required  id="pincode" name="pincode">
+            </p>
+            <hr>
+            <h2>
+                Payment Information
+            </h2>
+            <p>
+                Card Name: <select name="cardname" required id="cardname" >
+                    <option>Visa</option>
+                    <option>Rupay</option>
+                    <option>Mastercard</option>
+                    <option>Maestro</option>
+                </select>
+                <p>Card Number : <input type="number" name="cnumber" id="cnumber" placeholder="000-000-000-000"></p>
+                <p>CVV : <input type="number" min="000" max="999"></p>
+                <p> Date : <input type="date" name="date"></p>
+            </p>
+            <div class="sub">
+            <button type="submit" name="submit" id="Submit">Submit</button>
+        </div>
+        </form>
+    </div>
+    
+</body>
+</html>
